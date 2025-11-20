@@ -38,7 +38,7 @@ body {
 .navContainer {
   width: 100%;
   height: auto;
-  /* background-color: pink; */
+
   padding: 2rem 3rem;
 }
 
@@ -49,7 +49,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* background-color: purple; */
 }
 
 .logoContainer {
@@ -142,13 +141,13 @@ body {
 .heroContainer {
   width: 100%;
   height: 85vh;
-  /* background: orchid; */
+
   padding: 0rem 3rem;
 }
 
 .heroContent {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(./main\ hero.png);
+    url(./Images/main-hero.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -169,12 +168,11 @@ body {
   color: white;
   justify-content: center;
   align-items: center;
-  /* background-color: greenyellow; */
 }
 
 .heroText {
   width: 40%;
-  /* background-color: bisque; */
+
   display: flex;
   flex-direction: column;
   row-gap: 0.25rem;
@@ -214,7 +212,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
-  /* background-color: orange; */
+
   justify-content: center;
   align-items: center;
 }
@@ -369,7 +367,7 @@ body {
 }
 
 .outline:hover {
-  background-color: #558507;
+  background-color: #6dad04;
   color: white;
   border: none;
 }
@@ -378,7 +376,7 @@ body {
 .whyContainer {
   width: 100%;
   height: auto;
-  /* background-color: yellow; */
+
   padding: 3rem 3rem;
   margin-top: 4rem;
 }
@@ -388,7 +386,7 @@ body {
   flex-direction: row;
   width: 100%;
   height: auto;
-  /* background-color: tan; */
+
   justify-content: space-between;
 }
 
@@ -398,7 +396,6 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
-  /* background-color: oldlace; */
 }
 
 .whyHeadingText {
@@ -407,7 +404,6 @@ body {
   width: 100%;
   flex-direction: column;
   row-gap: 0.5rem;
-  /* background-color: purple; */
 }
 
 .whyHeadingText h1 {
@@ -447,7 +443,6 @@ body {
 }
 
 .rightContent {
-  /* background-color: orange; */
   display: grid;
   grid-template-columns: 256px 256px 256px;
   grid-template-rows: 256px 256px;
@@ -458,28 +453,28 @@ body {
 }
 
 .whyImage1 {
-  background-image: url(./a.png);
+  background-image: url(./Images/a.webp);
   background-position: center;
   background-size: cover;
   border-radius: 1rem;
 }
 
 .whyImage2 {
-  background-image: url(./b.png);
+  background-image: url(./Images/b.webp);
   background-position: center;
   background-size: cover;
   border-radius: 1rem;
 }
 
 .whyImage3 {
-  background-image: url(./c.png);
+  background-image: url(./Images/Malysia.webp);
   background-position: center;
   background-size: cover;
   border-radius: 1rem;
 }
 
 .whyImage4 {
-  background-image: url(./d.png);
+  background-image: url(./Images/d.webp);
   background-position: center;
   background-size: cover;
   border-radius: 1rem;
@@ -489,10 +484,11 @@ body {
 .testimonialsContainer {
   width: 100%;
   height: auto;
-  /* background-color: #4a6b13; */
-  background-image: url(./testimonial\ background\ image--darker.png);
-  background-position: center;
-  background-size: center;
+
+  background-image: url(./Images/testimonial-image.webp);
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 8rem 3rem;
   margin-top: 4rem;
 }
@@ -505,7 +501,6 @@ body {
   row-gap: 5rem;
   align-items: center;
   justify-content: start;
-  /* background-color: pink; */
 }
 
 .topTestimonial {
@@ -542,10 +537,6 @@ body {
   height: auto;
   justify-content: center;
   align-items: center;
-  /* background-color: pink; */
-  /* max-width: 95%;
-  flex-wrap: wrap;
-  row-gap: 1.5rem; */
 }
 
 .testimonialCard {
@@ -619,6 +610,7 @@ body {
   color: #1d2939;
   line-height: 1.5rem;
 }
+
 /* FREQUENTLY ASKED CONTAINER */
 .faqContainer {
   width: 100%;
@@ -644,7 +636,6 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
-  /* background-color: pink; */
 }
 
 .scanImage {
@@ -853,7 +844,14 @@ button {
 .subscribeInput::placeholder {
   color: #98a2b3;
   font-size: 0.875rem;
+  font-family: "Averta";
 }
+
+.subscribeInput:focus {
+  border: 1px solid #6dad04;
+  background-color: none;
+}
+
 /* TABLET VIEW */
 @media (max-width: 1024px) {
   .navContainer,
@@ -891,6 +889,10 @@ button {
   }
   .testimonialCard {
     width: 48%;
+  }
+
+  .scanImage {
+    display: none;
   }
 
   .faqContent {
@@ -946,9 +948,9 @@ button {
   }
 
   .placeHeading h1 {
-    max-width: 80%;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    max-width: 100%;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .placeHeading p {
@@ -969,8 +971,8 @@ button {
     width: 100%;
   }
   .whyHeadingText h1 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .whyHeadingText p {
@@ -991,10 +993,14 @@ button {
     max-width: 80%;
   }
 
+  .testimonialContent {
+    row-gap: 3rem;
+  }
+
   .topTestimonial h1 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    width: 100%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 80%;
   }
 
   .topTestimonial p {
@@ -1023,5 +1029,27 @@ button {
     justify-content: start;
     align-items: start;
     row-gap: 4rem;
+  }
+
+  .faqCard {
+    padding: 1rem 0.75rem;
+  }
+  .question p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  .faqTexts h1 {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .testimonialText p {
+    font-size: 0.875rem;
+  }
+
+  .testimonialCard {
+    padding: 1.5rem 1rem;
   }
 }
