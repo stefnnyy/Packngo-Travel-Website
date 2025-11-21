@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +27,7 @@ font-face {
 }
 
 body {
-  font-family: "Averta";
+  font-family: "Averta", "Inter";
 }
 
 .mainSection {
@@ -1035,7 +1037,7 @@ button {
     padding: 1rem 0.75rem;
   }
   .question p {
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.5rem;
   }
 
@@ -1046,7 +1048,7 @@ button {
   }
 
   .testimonialText p {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .testimonialCard {
